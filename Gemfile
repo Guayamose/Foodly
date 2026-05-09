@@ -57,7 +57,7 @@ gem 'ruby_llm'
 gem "faker", "~> 3.4"
 gem "solid_queue"
 gem 'neighbor'
-gem "simple_calendar"
+gem "simple_calendar", github: "kalebfukuda/simple_calendar"
 gem "solid_cable"
 
 # gem "activestorage-cloudinary-service"

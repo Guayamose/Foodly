@@ -6,6 +6,13 @@ GIT
       actionpack (>= 5.2)
       activemodel (>= 5.2)
 
+GIT
+  remote: https://github.com/kalebfukuda/simple_calendar.git
+  revision: d84c70d14444226b35bb9db91c4c141274f4f434
+  specs:
+    simple_calendar (3.1.0)
+      rails (>= 6.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -325,8 +332,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
-    simple_calendar (3.1.0)
-      rails (>= 6.1)
     solid_cable (1.0.3)
       rails (< 9)
     solid_queue (1.2.1)
@@ -406,7 +411,7 @@ DEPENDENCIES
   ruby_llm
   sassc-rails
   selenium-webdriver
-  simple_calendar
+  simple_calendar!
   simple_form!
   solid_cable
   solid_queue

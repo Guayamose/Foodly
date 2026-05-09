@@ -1,0 +1,15 @@
+ {
+  "name": "Foodly",
+  "short_name": "Foodly",
+  "description": "App to generate recipes based on a photo of your fridge contents.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#6ED3CF",
+  "icons": [
+    { "src": "/icons/logo.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/logo.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/logo.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

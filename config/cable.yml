@@ -2,5 +2,8 @@ development:
   adapter: solid_cable
   silence_polling: true
 
+test:
+  adapter: test
+
 production:
   adapter: solid_cable

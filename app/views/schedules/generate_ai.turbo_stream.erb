@@ -1,0 +1,6 @@
+<%= turbo_stream.replace "divFormAi" do %>
+  <%= render "schedules/ai", schedule: Schedule.new, start_date: @start_date %>
+<% end %>
+<%= turbo_stream.update "calendar" do %>
+  <%= render "schedules/calendar", schedules: @schedules %>
+<% end %>

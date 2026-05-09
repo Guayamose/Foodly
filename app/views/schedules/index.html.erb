@@ -1,3 +1,4 @@
+<%= turbo_stream_from "schedules" %>
 <div class="container" data-controller="scheduler">
   <h2 class="text-cWhite mt-5 mb-4">Your Meal Plan</h2>
   <%= link_to "Add to Meal Plan", "#",
@@ -26,7 +27,9 @@
     </ul>
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="nav-ai" role="tabpanel" aria-labelledby="nav-ai-tab">
-        <%= render "schedules/ai", schedule: @schedule %>
+        <div id="divFormAi">
+          <%= render "schedules/ai", schedule: @schedule %>
+        </div>
       </div>
       <div class="tab-pane fade" id="nav-manually" role="tabpanel" aria-labelledby="nav-manually-tab">
         <div id="divForm">
@@ -47,8 +50,10 @@
         <i class="fa-solid fa-arrow-right"></i>
       <% end %>
     </div>
-    <div id="calendar" style="overflow-x:auto;max-width:400px">
+    <div id="calendar" class="mt-3" style="overflow-x:auto;max-width:400px">
       <%= render "schedules/calendar", schedules: @schedules %>
     </div>
+  </div>
+  <div class="p-3 w-100 h-25" data-scheduler-target="eventList">
   </div>
 </div>

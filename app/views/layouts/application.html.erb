@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="manifest" href="<%= asset_path 'manifest.json' %>">
-    <%= csrf_meta_tags %>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">    <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <%= render 'shared/ios_pwa_links' %>
+    <meta name="theme-color" content="#000000" />
   </head>
   <body class="bg-cBlack">
     <%= render "shared/flashes" %>

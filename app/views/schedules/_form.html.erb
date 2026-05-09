@@ -7,7 +7,7 @@
           placeholder: "Find a recipe...",
           data: { action: 'input->scheduler#submit', scheduler_target: "searchinput" } %>
     <div id="schedulerrecipe" class="row p-1">
-      <%= render "schedules/search", recipes: current_user.recipes %>
+      <%= render "schedules/search", recipes: current_user.favorited_by_type('Recipe') %>
     </div>
   </div>
   <%= f.input :recipe_id, as: :hidden, input_html: { data: { scheduler_target: "recipeInput" } } %>

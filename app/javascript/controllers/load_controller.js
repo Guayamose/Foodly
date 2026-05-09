@@ -7,4 +7,10 @@ export default class extends Controller {
   addLoad() {
     this.spinnerTarget.classList.remove("d-none")
   }
+
+  removeSpinner() {
+    console.log("remove spinner");
+
+    this.spinnerTarget.classList.add("d-none")
+  }
 }

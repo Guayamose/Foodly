@@ -6,7 +6,7 @@
       <%= render "recipes/spinner" %>
       <!-- Input field for the camera -->
       <div class="text-center">
-        <%= f.input :photo, as: :file, input_html: { accept: "image/*", capture: "camera", id: "photo-input", style: "display: none;", data: { action: "change->scan-new#previewPhoto" }}, label: false %>
+        <%= f.input :photo, as: :file, input_html: { accept: "image/*", id: "photo-input", style: "display: none;", data: { action: "change->scan-new#previewPhoto" }}, label: false %>
         <label for="photo-input" id="photo-button" data-scan-new-target="photoButton">
           <i class="fa-solid fa-camera-retro fa-fade fa-2xl"></i>
         </label>

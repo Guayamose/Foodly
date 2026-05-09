@@ -1,9 +1,5 @@
 <div data-load-target="spinner" class="d-none col-sm-6 col-md-3 top-0 start-0 h-100 w-100 position-fixed d-flex justify-content-center align-items-center spinner-bg">
-  <div class="dots-wrapper ">
-    <div id="dot6" class="dot"></div>
-    <div id="dot7" class="dot"></div>
-    <div id="dot8" class="dot"></div>
-    <div id="dot9" class="dot"></div>
-    <div id="dot10" class="dot"></div>
+  <div id="div-load" style="width:100px; clip-path:circle(47% at 50% 50%)">
+    <%= File.read(Rails.root.join('app/assets/images/animation/loading.svg')).html_safe %>
   </div>
 </div>

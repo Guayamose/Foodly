@@ -3,7 +3,7 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="scheduler"
 export default class extends Controller {
   static targets = ["searchinput", "recipeInput", "divRecipeCards",
-                    "formScheduler", "aiFormScheduler"]
+                    "formScheduler", "aiFormScheduler", "eventList"]
   static values = { url: String }
 
   submit() {
@@ -28,4 +28,22 @@ export default class extends Controller {
     this.formSchedulerTarget.reset()
   }
 
+  calendarEvent(e) {
+  //   console.log(e.currentTarget)
+  //  console.log(e.currentTarget.querySelectorAll('div[data-recipe]'))
+  //  console.log(e.currentTarget.querySelectorAll('div[data-name]'));
+    let list = '';
+    this.eventListTarget.innerHTML=""
+   if (e.currentTarget.querySelector('div[data-recipe]')) {
+    e.currentTarget.querySelectorAll('div[data-recipe]').forEach((el)=>{
+      list += `<li class="btn btn-cYellow rounded-pill"><a class="text-decoration-none text-black " href='${el.dataset.recipe}'>${el.dataset.name}</a></li>`
+    });
+      this.eventListTarget.innerHTML=`
+         <ul class="list-unstyled d-flex flex-column gap-2 ">
+          ${list}
+         </ul>
+      `
+
+    }
+  }
 }

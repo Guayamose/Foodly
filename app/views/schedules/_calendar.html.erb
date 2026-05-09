@@ -1,17 +1,17 @@
-<%= month_calendar events: @schedules, attribute: :date do |date, schedules| %>
-  <div class="day calendar-day position-relative">
-    <%= date.day %>
-    <% if schedules.count > 0 %>
-      <span class="badge text-bg-cYellow rounded-circle position-absolute calendar-badge" style="top: 3px; right: 0;">
-        <%= schedules.count %>
-      </span>
-    <% end %>
-    <div class="calendar-event">
-      <% schedules.each do |schedule| %>
-        <div class="event mb-1">
-          <%= link_to schedule.recipe.name, recipe_path(schedule.recipe),class: "text-decoration-none text-cBlack" %>
-        </div>
+<div>
+  <%= month_calendar events: schedules, attribute: :date, url: schedules_path do |date, schedules_day| %>
+    <div class="day calendar-day position-relative" data-action="click->scheduler#calendarEvent">
+      <%= date.day %>
+      <% if schedules_day.count > 0 %>
+        <span class="badge text-bg-cYellow rounded-circle position-absolute calendar-badge" style="top: 3px; right: 0;">
+          <%= schedules_day.count %>
+        </span>
       <% end %>
+      <div class="calendar-event">
+        <% schedules_day.each do |schedule| %>
+          <div data-recipe="<%= recipe_path(schedule.recipe) %>" data-name="<%= schedule.recipe.name %>"></div>
+        <% end %>
+      </div>
     </div>
-  </div>
-<% end %>
+  <% end %>
+</div>

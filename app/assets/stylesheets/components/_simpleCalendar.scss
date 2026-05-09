@@ -1,0 +1,47 @@
+.simple-calendar {
+  width: 100% ;
+  max-width: 100% ;
+
+  table{
+    width: 100% ;
+    border-collapse: collapse ;
+    table-layout: fixed ;
+    width: 100% ;
+    max-width: 100% ;
+  }
+
+  th {
+    background-color: $cGray;
+    border: 2px solid #bdbdbd7b;
+    // color: $SeaGreen;
+    color: $DarkYellow;
+  }
+
+  td {
+    background-color: $cGray !important;
+    border: 2px solid #bdbdbd7b;
+    color: $SeaGreen;
+    // color: $DarkYellow;
+    // border-radius: 15px;
+    // color: $White;
+    // text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  .simple-calendar th,
+  .simple-calendar td {
+    word-wrap: break-word !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .today {
+    background-color: $DarkYellow;
+    opacity: .9;
+  }
+
+  .prev-month,
+  .next-month {
+    background-color: #ffffffce !important;
+    color: black;
+  }
+}

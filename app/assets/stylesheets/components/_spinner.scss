@@ -55,3 +55,16 @@
     animation-iteration-count: infinite;
     animation-delay: 0.8s;
 }
+
+@keyframes bounce-up-down {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at original position */
+  }
+  50% {
+    transform: translateY(-60px); /* Move up by 20px at halfway point */
+  }
+}
+
+#ebdU0nF5mNa2{
+  animation: bounce-up-down 2s infinite alternate;
+}
