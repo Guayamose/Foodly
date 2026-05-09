@@ -1,62 +1,15 @@
 name: Oryon Security Scan
 
 on:
-  workflow_dispatch:
   push:
   pull_request:
 
 permissions:
   contents: read
-  security-events: write
+  id-token: write
 
 jobs:
   oryon:
-    name: Oryon scan
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          path: repo
-
-      - name: Checkout Oryon Action
-        uses: actions/checkout@v4
-        with:
-          repository: Guayamose/oryon-action
-          ref: main
-          path: action
-          ssh-key: ${{ secrets.ORYON_ACTION_DEPLOY_KEY }}
-
-      - name: Normalize repository identity
-        working-directory: repo
-        run: |
-          repo="${GITHUB_REPOSITORY,,}"
-          git remote set-url origin "git@github.com:${repo}.git"
-
-      - name: Run Oryon scan
-        id: oryon
-        uses: ./action
-        with:
-          backend-url: https://dashboard.oryontechnology.com
-          workspace: repo
-          out-dir: .oryon
-          upload: "true"
-          ai: "true"
-          report: none
-          sarif: "true"
-          fail-on: none
-        env:
-          ORYON_CI_TOKEN: ${{ secrets.ORYON_CI_TOKEN }}
-          ORYON_CLIENT_SECRET: ${{ secrets.ORYON_CLIENT_SECRET }}
-
-      - name: Upload Oryon artifacts
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: oryon-security-scan
-          path: repo/.oryon/
-          include-hidden-files: true
-          if-no-files-found: warn
+    uses: Oryon-Technology/oryon-cicd-pipeline/.github/workflows/scan.yml@v1
+    secrets:
+      ORYON_CI_TOKEN: ${{ secrets.ORYON_CI_TOKEN }}
