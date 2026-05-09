@@ -1,7 +1,6 @@
 name: Oryon Security Scan
 
 on:
-  workflow_dispatch:
   push:
   pull_request:
 
@@ -11,8 +10,6 @@ permissions:
 
 jobs:
   oryon:
-    uses: Guayamose/oryon-action/.github/workflows/scan.yml@v1
-    with:
-      fail-on: none
+    uses: Oryon-Technology/oryon-cicd-pipeline/.github/workflows/scan.yml@v1
     secrets:
       ORYON_CI_TOKEN: ${{ secrets.ORYON_CI_TOKEN }}
