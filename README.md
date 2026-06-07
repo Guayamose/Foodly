@@ -1,84 +1,84 @@
 # Foodly
 
-## Cocina mejor con lo que ya tienes
+## Cook Better With What You Already Have
 
-Foodly es una app mobile-first que convierte los ingredientes disponibles en casa en recetas claras, personalizadas y listas para cocinar. El usuario solo tiene que hacer una foto de lo que tiene, elegir cuanto tiempo quiere dedicar y Foodly propone recetas adaptadas a sus preferencias, alergias y estilo de vida.
+Foodly is a mobile-first cooking assistant that turns the ingredients people already have at home into clear, personalized recipes ready to cook. Users take a photo of their available ingredients, choose how much time they have, and Foodly suggests recipes that match their preferences, allergies, and lifestyle.
 
-La idea es simple: menos tiempo pensando que cocinar, menos comida desperdiciada y mas decisiones utiles en el dia a dia.
+The goal is simple: spend less time deciding what to cook, waste less food, and make everyday meals easier to plan.
 
-## El Problema
+## The Problem
 
-Muchas personas tienen ingredientes en la nevera, pero no una idea clara de como combinarlos. Eso termina generando compras innecesarias, desperdicio de comida y la sensacion de repetir siempre los mismos platos.
+People often have food in the fridge but no clear idea of how to turn it into a meal. That leads to unnecessary shopping, food waste, and the feeling of cooking the same dishes over and over again.
 
-Foodly resuelve ese momento concreto: "tengo esto, que puedo cocinar ahora?"
+Foodly solves that exact moment: "I have these ingredients. What can I cook right now?"
 
-## La Solucion
+## The Solution
 
-Foodly actua como un asistente culinario personal:
+Foodly works as a personal cooking assistant:
 
-1. El usuario sube o toma una foto de sus ingredientes.
-2. La app identifica los ingredientes visibles.
-3. El usuario ajusta preferencias como tiempo disponible, dieta o alergias.
-4. Foodly genera recetas realistas con instrucciones paso a paso.
-5. Las recetas se pueden guardar, valorar y organizar en un calendario de comidas.
+1. The user uploads or takes a photo of their ingredients.
+2. The app identifies the visible ingredients.
+3. The user adjusts preferences such as available time, diet, and allergies.
+4. Foodly generates realistic recipes with step-by-step instructions.
+5. Recipes can be saved, rated, reviewed, and organized in a meal calendar.
 
-## Funcionalidades Principales
+## Core Features
 
-- Escaneo de ingredientes desde una foto.
-- Generacion de recetas personalizadas con IA.
-- Recetas adaptadas a preferencias alimentarias y alergias.
-- Fichas de receta con duracion, calorias por racion, ingredientes e instrucciones.
-- Ajuste dinamico de cantidades segun el numero de raciones.
-- Favoritos para guardar las mejores recetas.
-- Likes y reviews para destacar las recetas mas valoradas.
-- Busqueda y filtros por ingrediente, cocina, dieta, metodo, tipo de comida, dificultad, tiempo, calorias, precio y temporada.
-- Planificador de comidas con calendario.
-- Generacion automatica de planes de comida para 7 dias, 30 dias o un periodo personalizado.
-- Experiencia pensada para movil y uso diario.
+- Ingredient scanning from a photo.
+- AI-powered personalized recipe generation.
+- Recipes adapted to dietary preferences and allergies.
+- Recipe pages with duration, calories per serving, ingredients, and instructions.
+- Dynamic ingredient quantities based on the number of servings.
+- Favorites to save the best recipes.
+- Likes and reviews to highlight the most valued recipes.
+- Search and filters by ingredient, cuisine, diet, cooking method, meal type, difficulty, time, calories, price, and seasonality.
+- Meal planner with calendar view.
+- Automatic meal plan generation for 7 days, 30 days, or a custom period.
+- Mobile-first experience designed for daily kitchen use.
 
-## Para Quien Es
+## Who It Is For
 
-Foodly esta pensado para personas que quieren cocinar mas en casa sin complicarse:
+Foodly is designed for people who want to cook more at home without overthinking it:
 
-- Personas con poco tiempo que necesitan ideas rapidas.
-- Familias que quieren organizar comidas semanales.
-- Estudiantes o profesionales que quieren aprovechar lo que ya tienen.
-- Usuarios con dietas o alergias que necesitan propuestas mas personalizadas.
-- Personas interesadas en reducir el desperdicio de comida.
+- Busy people who need quick meal ideas.
+- Families planning weekly meals.
+- Students and professionals who want to make better use of what they already have.
+- Users with dietary preferences or allergies who need more personalized suggestions.
+- Anyone interested in reducing food waste.
 
-## Propuesta de Valor
+## Value Proposition
 
-Foodly une tres necesidades en una sola experiencia:
+Foodly combines three everyday needs in one experience:
 
-- Aprovechar mejor los alimentos disponibles.
-- Decidir rapido que cocinar.
-- Convertir recetas sueltas en una planificacion semanal.
+- Make better use of available food.
+- Decide what to cook faster.
+- Turn individual recipes into a practical weekly meal plan.
 
-No es solo un buscador de recetas. Es una herramienta que parte de la realidad del usuario: sus ingredientes, su tiempo, sus preferencias y su calendario.
+It is not just a recipe search engine. Foodly starts from the user's real context: their ingredients, their time, their preferences, and their calendar.
 
-## Experiencia de Uso
+## User Experience
 
-La app esta disenada para ser directa:
+The app is designed to be direct:
 
-- Entra.
-- Haz una foto.
-- Recibe recetas.
-- Guarda lo que te gusta.
-- Planifica tus comidas.
+- Open the app.
+- Take a photo.
+- Get recipe ideas.
+- Save what you like.
+- Plan your meals.
 
-El foco esta en reducir friccion y ayudar al usuario a pasar de "no se que cocinar" a "ya tengo una receta viable".
+The focus is to reduce friction and help users move from "I do not know what to cook" to "I have a realistic recipe I can make now."
 
-## Diferenciales
+## Key Differentiators
 
-- Recetas generadas a partir de ingredientes reales del usuario.
-- Personalizacion por alergias y preferencias.
-- Planificacion de comidas integrada.
-- Biblioteca propia de recetas favoritas.
-- Filtros practicos para encontrar opciones segun tiempo, coste, calorias o dificultad.
-- Enfoque mobile-first, ideal para usar desde la cocina.
+- Recipes generated from the user's real ingredients.
+- Personalization based on allergies and preferences.
+- Integrated meal planning.
+- Personal recipe library through favorites.
+- Practical filters for time, cost, calories, difficulty, and more.
+- Mobile-first approach, ideal for use in the kitchen.
 
-## Estado del Producto
+## Product Status
 
-Foodly es un MVP funcional que demuestra el flujo completo: identificacion de ingredientes, generacion de recetas, gestion de favoritos, valoraciones, filtros y planificacion de comidas.
+Foodly is a functional MVP that demonstrates the full flow: ingredient recognition, recipe generation, favorites, ratings, reviews, filters, and meal planning.
 
-El proyecto esta orientado a validar una experiencia de cocina asistida por IA que ayude a usuarios reales a ahorrar tiempo, aprovechar mejor su comida y organizar mejor sus comidas semanales.
+The project is focused on validating an AI-assisted cooking experience that helps real users save time, make better use of their food, and organize weekly meals more easily.
